@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Profile card component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    background-image: url(./images/bg-pattern-top.svg);
+    background-image: url(./images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    font-family: 'Kumbh Sans';
+    background-repeat: no-repeat;
+  }
+  .container  {
+    display: flex;
+    justify-content: center;
+    margin: 150px 10px;
+  }
+  .padding {
+    padding: 25px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    width: 375px;
+    border-radius: 20px;
+    background-color: #fff;
+  }
+  .profile {
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 6px solid white;
+  }
+  p {
+    text-align: center;
+  }
+  .img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+  }
+  .states {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .state {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .name {
+    margin-right: 20px;
+  }
+  .leave {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+  .color, .leave, .p {
+    color: hsl(227, 10%, 46%);
+    font-weight: 500;
+  } 
+  @media (max-width:375px) {
+    .card {
+      width: 375px;
+    }
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="ig">
+        <img class="img" src="./images/bg-pattern-card.svg" alt="">
+        <p><img class="profile" src="./images/image-victor.jpg" alt=""></p>
+      </div>
+      <div class="padding">
+        <div class="flex">
+          <h2 class="name">Victor Crest</h2>
+          <h3 class="color">26</h3>
+        </div>
+        <h3 class="leave">London</h3>
+        <div class="state">
+          <div class="states">
+            <h2>80k</h2>
+            <p class="p">Followers</p>
+          </div>
+          <div class="states">
+            <h2>803K</h2>
+            <p class="p">Likes</p>
+          </div>
+          <div class="states">
+            <h2>1.4K</h2>
+            <p class="p">Photos</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
